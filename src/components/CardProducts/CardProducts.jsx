@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-const CardProducts = ({product}) => {
-
-  const {id, title, price, image} = product
+const CardProducts = ({ product }) => {
+  const { id, title, price, image } = product;
 
   return (
     <div className="flex-shrink-0 relative overflow-hidden bg-orange-300 rounded-lg max-w-xs shadow-lg">
@@ -42,7 +41,7 @@ const CardProducts = ({product}) => {
         <img
           src={image}
           className="relative w-40"
-          alt="Imagen Anteojo Producto"
+          alt={title}
         />
       </div>
       <div className="relative text-white px-6 pb-6 mt-6">
@@ -53,9 +52,7 @@ const CardProducts = ({product}) => {
               ${price}
             </span>
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end w-auto">
-              <Link to={`/item/${id}`}>
-              📄 Detail
-              </Link>
+              <Link to={`/item/${id}`}>📄 Detail</Link>
             </span>
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
               🛒 Comprar

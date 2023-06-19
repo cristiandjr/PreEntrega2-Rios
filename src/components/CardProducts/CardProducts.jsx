@@ -46,12 +46,11 @@ const CardProducts = ({product}) => {
         />
       </div>
       <div className="relative text-white px-6 pb-6 mt-6">
-        <span className="block opacity-75 -mb-1">Anteojos</span>
         <div className="block">
           <span className="block font-semibold text-xl">{title}</span>
           <div className="mt-5 flex justify-between flex-wrap">
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
-              {price}
+              ${price}
             </span>
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end w-auto">
               <Link to={`/item/${id}`}>

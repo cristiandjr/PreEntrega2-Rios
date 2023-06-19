@@ -8,6 +8,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 // pages
 import HomePage from "./pages/HomePage/HomePage";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </Router>

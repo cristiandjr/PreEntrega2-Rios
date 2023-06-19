@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -62,6 +62,9 @@ const ItemDetailContainer = () => {
           <span className="block font-semibold text-xl mb-1">{title}</span>
           <span className="block text-xs">{description}</span>
           <div className="mt-5 flex justify-between flex-wrap">
+            <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
+              <Link to="/">Volver a la tienda</Link>
+            </span>
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
               ${price}
             </span>

@@ -62,27 +62,29 @@ const NavBar = () => {
         }`}
       >
         <div className="text-sm lg:flex-grow">
-          <Link to="/"
+          <Link
+            to="/"
             href="#"
             className="block mt-4 p-2 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:bg-orange-300 transition duration-300 ease-in-out"
           >
             Inicio
           </Link>
-          
-          <Category/>
-          
-          <Link
-            href="#"
+
+          <Category />
+
+          {/*/<Link
+            to="#"
             className="block mt-4 p-2 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:bg-orange-300 transition duration-300 ease-in-out"
           >
             Ofertas
           </Link>
           <a
-            href="#"
+            to="#"
             className="block mt-4 p-2 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:bg-orange-300 transition duration-300 ease-in-out"
           >
             Contacto
           </a>
+        */}
         </div>
         <div>
           <CartWidget />

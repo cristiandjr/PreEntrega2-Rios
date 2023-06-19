@@ -13,8 +13,6 @@ const Category = () => {
       .then(json=>setCategories(json))
     }, []);
 
-    console.log('categories', categories)
-
 
   return (
     <>

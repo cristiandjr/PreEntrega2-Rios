@@ -4,26 +4,23 @@ import { useState, useEffect } from "react";
 import CardProducts from "../CardProducts/CardProducts";
 
 const ItemListContainer = () => {
-
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-    .then(res=>res.json())
-    .then(json=> setProducts(json))
-  })
-
-  //console.log('products', products)
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((json) => setProducts(json));
+  });
 
   return (
     <>
-    {
-      products.map((product) => {
+      {products.map((product) => {
         return (
-          <CardProducts key={product.id} product={product} />
-        )
-      })
-    }
+          <div key={product.id}>
+            <CardProducts product={product} />
+          </div>
+        );
+      })}
     </>
   );
 };

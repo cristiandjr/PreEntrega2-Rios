@@ -11,7 +11,6 @@ const ItemDetailContainer = () => {
       .then((json) => setProduct(json));
   }, [id]);
 
-  //console.log('product', product);
 
   const { title, category, description, image, price } = product;
 

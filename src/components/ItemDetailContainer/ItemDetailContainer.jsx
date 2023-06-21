@@ -86,8 +86,11 @@ const ItemDetailContainer = () => {
                     <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
                       <Link to="/">Volver a la tienda</Link>
                     </span>
-                    <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
+                    <span className="bg-white rounded-full mb-2 text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
                       🛒 Comprar
+                    </span>
+                    <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
+                      📦 Stock 5
                     </span>
                   </div>
                 </div>

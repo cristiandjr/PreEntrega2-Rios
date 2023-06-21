@@ -4,6 +4,10 @@ Live: https://delicate-griffin-2651ee.netlify.app/
 
 Repo: https://github.com/cristiandjr/PreEntrega2-Rios
 
+# GIF
+![](RedmeCoderMmerce.gif)
+
+
 # Se debe entregar.
 ### Rutas a configurar
 - ‘/’ navega a <ItemListContainer />

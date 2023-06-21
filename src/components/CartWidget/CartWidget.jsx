@@ -1,21 +1,49 @@
+import { useState } from "react";
+
+// componentes
+
 const CartWidget = () => {
+  const [showBox, setShowBox] = useState(false);
+
+  const handleClick = () => {
+    setShowBox(true);
+  };
+
+  const handleClose = () => {
+    setShowBox(false);
+  };
+
   return (
-    <button className="inline-flex items-center py-2 px-4 hover:bg-orange-300 transition duration-300 ease-in-out">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="orange"
-        className="w-6 h-6"
+    <div className="relative">
+      <button
+        className="inline-flex items-center py-2 px-4 hover:bg-orange-300 transition duration-300 ease-in-out bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        onClick={handleClick}
       >
-        <path
-          strokeLinecap="round"
-          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-        />
-      </svg>
-      <p className="text-black font-bold">5</p>
-    </button>
+        🛒
+        <p className="text-black font-bold">5</p>
+      </button>
+      {showBox && (
+        <div
+          className="fixed top-0 right-0 h-screen w-[30%] bg-gray-900 opacity-50 z-10"
+          onClick={handleClose}
+        ></div>
+      )}
+      {showBox && (
+        <div className="fixed top-0 right-0 h-screen w-[30%] bg-gray-900 z-20 flex flex-col justify-center items-center p-5">
+          <button
+            className="absolute top-2 right-2 text-white hover:text-gray-300 focus:outline-none"
+            onClick={handleClose}
+          >
+            X
+          </button>
+          <div>
+            {/** contenidoooooooooooooo */}
+            {/** contenidoooooooooooooo */}
+            {/** contenidoooooooooooooo */}
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

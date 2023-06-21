@@ -38,11 +38,7 @@ const CardProducts = ({ product }) => {
             opacity: "0.2",
           }}
         ></div>
-        <img
-          src={image}
-          className="relative w-40"
-          alt={title}
-        />
+        <img src={image} className="relative w-40" alt={title} />
       </div>
       <div className="relative text-white px-6 pb-6 mt-6">
         <div className="block">
@@ -51,11 +47,14 @@ const CardProducts = ({ product }) => {
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
               ${price}
             </span>
-            <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end w-auto">
+            <span className="bg-white mb-2 rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
+              🛒 Comprar
+            </span>
+            <span className="bg-white rounded-full mb-2 text-black text-xs font-bold px-3 py-2 leading-none flex items-end w-auto">
               <Link to={`/item/${id}`}>📄 Detail</Link>
             </span>
             <span className="bg-white rounded-full text-black text-xs font-bold px-3 py-2 leading-none flex items-end h-6 w-auto">
-              🛒 Comprar
+              📦 Stock 5
             </span>
           </div>
         </div>
